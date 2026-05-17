@@ -6,7 +6,7 @@ Thanks for helping keep this library useful and clean.
 
 1. **Original 11 Mile Labs work only.** This repo may adapt our own internal tooling, but it must not copy or lightly adapt third-party upstream skills. If someone else already published the skill, link to theirs instead of republishing it here.
 2. **Generic only.** Do not add business-specific, client-specific, personal, or project-local workflow content.
-3. **Multi-harness first.** Skills should work across Agent Skills-compatible harnesses. Claude-only behavior belongs in `agents/`, not in skill frontmatter.
+3. **Multi-harness first.** Skills should work across skills-compatible harnesses and must not require a specific host or Claude-only runtime feature.
 4. **Progressive disclosure.** Keep `SKILL.md` concise. Move long reference material into a clearly named `references/` directory when a skill grows beyond the essential workflow.
 5. **Provenance required.** Each new item needs an authorship and license check before merging.
 
@@ -28,21 +28,6 @@ license: MIT
 `license` is included as repository metadata. Harnesses that do not recognize it should ignore it.
 
 Do not use Claude-only execution fields in `skills/**/SKILL.md`.
-
-## Agent Frontmatter
-
-Claude Code agents may keep:
-
-```yaml
----
-name: example-agent
-description: "Clear trigger-oriented description."
-tools: Read, Grep, Glob
-model: sonnet
----
-```
-
-Strip runtime/session fields before publishing.
 
 ## Deferred Packs
 
