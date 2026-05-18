@@ -29,6 +29,7 @@ These are standard `SKILL.md` files intended to work in Claude Code, OpenAI Code
 | [`implementation-drift-check`](./skills/methodology/implementation-drift-check/SKILL.md) | Check changed artifacts against stated intent to catch scope drift and unrelated edits. |
 | [`pre-mortem`](./skills/methodology/pre-mortem/SKILL.md) | Imagine a project failed and work backward to surface risks. |
 | [`regression-risk-map`](./skills/methodology/regression-risk-map/SKILL.md) | Map likely regressions and targeted checks for a specific change. |
+| [`review-comment-action-plan`](./skills/methodology/review-comment-action-plan/SKILL.md) | Turn review comments into an ordered action plan with clarifications, deferrals, and verification. |
 | [`scope-check`](./skills/methodology/scope-check/SKILL.md) | Audit scope creep, hidden complexity, and v1/v2 boundaries. |
 | [`test-failure-signal-brief`](./skills/methodology/test-failure-signal-brief/SKILL.md) | Classify failing test and check output before debugging, fixing, or rewriting assertions. |
 | [`ticket-readiness-audit`](./skills/methodology/ticket-readiness-audit/SKILL.md) | Check whether a ticket is ready to claim, clarify, split, block, or send back. |
