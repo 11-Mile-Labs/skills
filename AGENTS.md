@@ -4,13 +4,13 @@ This repository is a curated, generic skills library for AI coding harnesses.
 
 ## Project Purpose
 
-`11-Mile-Labs/skills` publishes reusable methodology skills that are original, broadly useful, and safe to install outside 11 Mile Labs projects.
+`11-Mile-Labs/skills` publishes reusable engineering, QA, product, and work-management skills that are original, broadly useful, and safe to install outside 11 Mile Labs projects.
 
 ## Scope
 
 Included in v1:
 
-- Standard methodology skills under `skills/methodology/`
+- Standard multi-harness skills under `skills/engineering/`, `skills/qa/`, `skills/product/`, and `skills/work-management/`
 
 Excluded from v1:
 
@@ -38,7 +38,10 @@ Use `argument-hint` only when a skill benefits from a user-supplied target. Do n
 
 ## Layout
 
-- `skills/methodology/<name>/SKILL.md` - multi-harness methodology skills
+- `skills/engineering/<name>/SKILL.md` - engineering workflow and change-risk skills
+- `skills/qa/<name>/SKILL.md` - quality, verification, bug, and test strategy skills
+- `skills/product/<name>/SKILL.md` - product thinking, decision, criteria, and framing skills
+- `skills/work-management/<name>/SKILL.md` - ticket, review, handoff, and work-slicing skills
 
 ## Provenance
 
