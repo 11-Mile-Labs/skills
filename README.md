@@ -24,6 +24,7 @@ These are standard `SKILL.md` files intended to work in Claude Code, OpenAI Code
 | [`bug-repro-brief`](./skills/methodology/bug-repro-brief/SKILL.md) | Turn messy bug reports into reproducible bug briefs before debugging or ticketing. |
 | [`devil-advocate`](./skills/methodology/devil-advocate/SKILL.md) | Argue against a plan in good faith before committing. |
 | [`explain-like-5`](./skills/methodology/explain-like-5/SKILL.md) | Force a simple explanation of a concept, architecture, or decision. |
+| [`handoff-readiness-brief`](./skills/methodology/handoff-readiness-brief/SKILL.md) | Make active work state transferable before pausing, resuming, reviewing, or handing off. |
 | [`pre-mortem`](./skills/methodology/pre-mortem/SKILL.md) | Imagine a project failed and work backward to surface risks. |
 | [`regression-risk-map`](./skills/methodology/regression-risk-map/SKILL.md) | Map likely regressions and targeted checks for a specific change. |
 | [`scope-check`](./skills/methodology/scope-check/SKILL.md) | Audit scope creep, hidden complexity, and v1/v2 boundaries. |
