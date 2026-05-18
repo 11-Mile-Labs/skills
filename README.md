@@ -32,6 +32,7 @@ These are standard `SKILL.md` files intended to work in Claude Code, OpenAI Code
 | [`test-failure-signal-brief`](./skills/methodology/test-failure-signal-brief/SKILL.md) | Classify failing test and check output before debugging, fixing, or rewriting assertions. |
 | [`ticket-readiness-audit`](./skills/methodology/ticket-readiness-audit/SKILL.md) | Check whether a ticket is ready to claim, clarify, split, block, or send back. |
 | [`verification-contract`](./skills/methodology/verification-contract/SKILL.md) | Define the evidence required before claiming a feature, ticket, or plan is done. |
+| [`work-slice-splitter`](./skills/methodology/work-slice-splitter/SKILL.md) | Split broad work into independently claimable outcome slices before execution. |
 
 ## Compatibility
 
