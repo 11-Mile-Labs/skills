@@ -20,6 +20,7 @@ These are standard `SKILL.md` files intended to work in Claude Code, OpenAI Code
 
 | Skill | Purpose |
 | --- | --- |
+| [`acceptance-criteria-tightener`](./skills/methodology/acceptance-criteria-tightener/SKILL.md) | Rewrite vague acceptance criteria into observable pass/fail statements. |
 | [`bug-repro-brief`](./skills/methodology/bug-repro-brief/SKILL.md) | Turn messy bug reports into reproducible bug briefs before debugging or ticketing. |
 | [`devil-advocate`](./skills/methodology/devil-advocate/SKILL.md) | Argue against a plan in good faith before committing. |
 | [`explain-like-5`](./skills/methodology/explain-like-5/SKILL.md) | Force a simple explanation of a concept, architecture, or decision. |
