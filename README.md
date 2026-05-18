@@ -24,6 +24,7 @@ These are standard `SKILL.md` files intended to work in Claude Code, OpenAI Code
 | [`explain-like-5`](./skills/methodology/explain-like-5/SKILL.md) | Force a simple explanation of a concept, architecture, or decision. |
 | [`pre-mortem`](./skills/methodology/pre-mortem/SKILL.md) | Imagine a project failed and work backward to surface risks. |
 | [`scope-check`](./skills/methodology/scope-check/SKILL.md) | Audit scope creep, hidden complexity, and v1/v2 boundaries. |
+| [`verification-contract`](./skills/methodology/verification-contract/SKILL.md) | Define the evidence required before claiming a feature, ticket, or plan is done. |
 
 ## Compatibility
 
