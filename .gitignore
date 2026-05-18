@@ -33,3 +33,10 @@ tmp/
 # Logs
 logs/
 *.log
+
+# metrics
+.claude/metrics/
+
+docs/superpowers/
+
+tmp-*
