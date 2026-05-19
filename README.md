@@ -67,6 +67,10 @@ These are standard `SKILL.md` files intended to work in Claude Code, OpenAI Code
 
 Stack-specific procedural skills are deliberately held back from v1. Neon, Drizzle, Stripe, Ink, and similar content should become coherent skill sets or packs instead of a loose miscellaneous bucket.
 
+## Related Skill Packs
+
+- [11-Mile-Labs/seo-aeo-skills](https://github.com/11-Mile-Labs/seo-aeo-skills) - SEO and Answer Engine Optimization methodology pack.
+
 ## Philosophy
 
 - Originally authored by 11 Mile Labs: adapted from our internal tooling, with no copied third-party upstream content.
