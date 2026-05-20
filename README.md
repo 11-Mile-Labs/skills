@@ -70,6 +70,7 @@ Stack-specific procedural skills are deliberately held back from v1. Neon, Drizz
 ## Related Skill Packs
 
 - [11-Mile-Labs/seo-aeo-skills](https://github.com/11-Mile-Labs/seo-aeo-skills) - SEO and Answer Engine Optimization methodology pack.
+- [11-Mile-Labs/saguaro-agent](https://github.com/11-Mile-Labs/saguaro-agent) - Workflow orchestration, memory, and knowledge for AI coding harnesses.
 
 ## Philosophy
 
