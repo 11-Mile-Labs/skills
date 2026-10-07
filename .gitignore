@@ -40,3 +40,6 @@ logs/
 docs/superpowers/
 
 tmp-*
+
+# Randolph per-project folder: never committed in a public repository.
+.randolph/
