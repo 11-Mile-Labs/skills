@@ -23,18 +23,21 @@ Excluded from v1:
 
 ## Authoring Rules
 
-Skills must use standard `SKILL.md` frontmatter:
+Skills must use Agent Skills frontmatter. The reference validator allows `name`, `description`, `license`, `compatibility`, `metadata`, and experimental `allowed-tools`. Anything else, including `argument-hint`, fails validation.
 
 ```yaml
 ---
 name: example-skill
-description: "Clear trigger-oriented description."
-argument-hint: "[optional-input]"
+description: "What the skill produces. Use when <trigger>. Do not <boundary>."
 license: MIT
 ---
 ```
 
-Use `argument-hint` only when a skill benefits from a user-supplied target. Do not add Claude-only execution fields such as `model`, `effort`, `allowed-tools`, `context`, or `user-invocable` to `skills/**/SKILL.md`.
+The description is the only text every harness loads before choosing a skill. State the job, the trigger, and a boundary when a neighboring skill could match the same request. Name that neighbor.
+
+Keep the body to the rule, the verdicts, and the output contract. Put worked examples in `references/examples.md`, and tell the agent to read that file only when a draft misses the contract.
+
+Do not add harness-only execution fields such as `model`, `effort`, `allowed-tools`, `context`, `user-invocable`, or `disable-model-invocation` to `skills/**/SKILL.md`. `allowed-tools` is in the spec and is experimental; this pack does not use it.
 
 ## Layout
 

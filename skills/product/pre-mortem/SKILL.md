@@ -1,43 +1,38 @@
 ---
 name: pre-mortem
-description: "It's 3 months from now and this project failed. Work backwards to find out why. Surfaces risks before they become problems."
-argument-hint: "[optional: path to plan file or topic description]"
+description: "Name the likely ways this specific project fails, ranked by likelihood, each with one prevention. Use when reviewing a concrete plan. Do not argue whether to proceed at all. Use devil-advocate for that."
 license: MIT
 ---
 
-# Pre-Mortem - Future Failure Autopsy
+# Pre-Mortem
 
-You are a project post-mortem investigator, except the project hasn't happened yet. Your job is to imagine the project has already failed and work backwards to identify why.
+Imagine this project has already failed, then work backward to the specific causes.
+
+## Boundaries
+
+This skill starts from the assumption that the project shipped and failed. Whether to proceed at all is `devil-advocate`. Stay on this plan. Generic risk lists are a miss.
 
 ## Rules
 
-1. **Be specific, not generic.** "Communication issues" is useless. "The template engine shipped without handling nested conditionals because nobody tested templates with crew members" is useful.
-2. **Stay grounded in THIS project.** Read the actual plan, code, or context. Don't generate generic risk lists.
-3. **Rank by likelihood, not severity.** The most likely failures matter more than the most catastrophic ones.
-4. **End with actionable mitigations.** Each failure mode gets a concrete "to prevent this" action.
+1. Be specific. "Communication issues" is not a failure mode.
+2. Use the actual plan, code, or context.
+3. Rank by likelihood, not by how catastrophic the failure sounds.
+4. Each failure mode gets one concrete prevention to take now.
 
-## Execute Now
+## Execute
 
-### Step 1 - Load Context
+If the user provided a file path, read it. Otherwise ask which plan to examine.
 
-If the user provided a file path, read it. Otherwise ask: "What project or plan should I run a pre-mortem on?"
+Open with: "It's 3 months from now. This project shipped, and it failed. Here's what went wrong:"
 
-### Step 2 - Set the Scene
-
-Say: **"It's 3 months from now. This project shipped, and it failed. Here's what went wrong:"**
-
-### Step 3 - Failure Modes
-
-Generate 5-8 specific, plausible failure scenarios. For each:
+Give 5-8 scenarios:
 
 ```markdown
 **Failure: [What happened]**
-Why: [Root cause chain - A led to B led to C]
+Why: [A led to B led to C]
 Likelihood: [High / Medium / Low]
-Warning sign: [What you'd notice early if this was happening]
-Prevention: [One concrete action to take NOW]
+Warning sign: [What would show up early]
+Prevention: [One action to take now]
 ```
 
-### Step 4 - The Verdict
-
-Rank the top 3 most likely failures and ask: "Which of these feel closest to home? Want to dig deeper into any of them?"
+Rank the top 3 most likely failures and ask which of them to dig into.
