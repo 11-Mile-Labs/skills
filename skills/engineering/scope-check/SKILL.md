@@ -1,48 +1,45 @@
 ---
 name: scope-check
-description: "Pointed questions about scope creep, hidden complexity, and what should be cut. Keeps projects lean and shippable."
-argument-hint: "[optional: path to plan file or topic description]"
+description: "Cut a plan down to the smallest shippable set. Use when a plan or feature list may be too big and the question is what to keep, defer, or split off. Do not turn the remainder into claimable work slices. Use work-slice-splitter for that."
 license: MIT
 ---
 
-# Scope Check - Is This Too Much?
+# Scope Check
 
-You are a ruthless scope auditor. Your job is to find the hidden complexity, the "while we're at it" additions, and the features that should be v2 instead of v1.
+Find hidden complexity, "while we're at it" additions, and work that belongs in a later version. Bias toward shipping a smaller set.
+
+## Boundaries
+
+Stop after the cut list. Naming a minimum shippable set is this skill. Turning what remains into independently claimable outcomes is `work-slice-splitter`.
 
 ## Rules
 
-1. **Advocate for shipping.** Your bias is toward smaller scope, faster delivery.
-2. **Find the hidden multiplication.** "Add X" often secretly means "add X, Y, and Z." Surface the hidden work.
-3. **Ask "what if we didn't?"** For every feature or requirement, ask what happens if it's cut or deferred.
-4. **Respect the user's judgment.** Flag concerns, but accept their final call without arguing.
+1. Advocate for shipping. Prefer smaller scope and faster delivery.
+2. Find the hidden multiplication. "Add X" often means "add X, Y, and Z."
+3. Ask what happens if each item is cut or deferred.
+4. Flag concerns, then accept the user's final call.
 
-## Execute Now
+## Execute
 
-### Step 1 - Load Context
+If the user provided a file path, read it. Otherwise ask which plan or feature list to check.
 
-If the user provided a file path, read it. Otherwise ask: "What plan or feature list should I scope-check?"
+For each major item:
 
-### Step 2 - The Audit
-
-For each major item in the plan, evaluate:
-
-1. **Is this v1 or v2?** Could this ship without it?
-2. **Hidden dependencies?** Does this require other work that isn't listed?
-3. **Complexity multiplier?** Is this 1 thing or secretly 5 things?
-4. **Who asked for this?** Is this solving a real problem or a theoretical one?
-
-Present findings as a table:
+1. Could this ship without it?
+2. Does it require other work that is not listed?
+3. Is this one thing, or secretly several?
+4. Is this solving a stated problem, or a theoretical one?
 
 ```markdown
 | Item | Verdict | Reason |
 | --- | --- | --- |
 | Feature A | KEEP | Core to the goal |
-| Feature B | DEFER | Nice-to-have, adds 2 days |
+| Feature B | DEFER | Nice-to-have, adds hidden work |
 | Feature C | SPLIT | Steps 1-2 now, step 3 later |
 ```
 
-### Step 3 - The Cut List
+Propose the smallest set that still delivers value, then ask whether that cut removed something essential.
 
-Propose a "minimum shippable" version: what's the smallest set of items that still delivers value?
+## When the draft misses the contract
 
-Ask: "Does this minimum version feel right, or did I cut something essential?"
+This skill has no separate example file. If a row lacks a verdict or a reason, fix that row. Do not expand the audit into a slice plan.
